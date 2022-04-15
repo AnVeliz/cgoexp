@@ -1,5 +1,5 @@
 #!/bin/bash
 
-rm -f my.{o,a} test
-g++ -Wall -c -o my.o ./clib/smth.cpp && ar rcs libsmth.a libsmth.o
-go build --ldflags '-extldflags "-static"' -o test main.go && rm -f libsmth.{o,a}
+rm -f libmy.{o,a} test
+gcc -Wall -Wextra -Werror -c -o libmy.o ./pkg/clib/my.cpp && ar rcs libmy.a libmy.o
+go build --ldflags '-extldflags "-static"' -o test main.go
