@@ -1,0 +1,12 @@
+{
+        "go.goroot": "/home/user/go/",
+        "go.gopath": "/home/user/gopath",
+        "go.formatTool": "goformat",
+        "go.autocompleteUnimportedPackages": true,
+        "[go]": {
+            "editor.formatOnSave": true,
+            "editor.codeActionsOnSave": {
+                "source.organizeImports": true
+            }
+        }
+}
